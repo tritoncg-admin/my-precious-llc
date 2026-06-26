@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Precious, LLC | Luxury Static Prop Rentals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap');
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans selection:bg-amber-500 selection:text-black">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-serif tracking-widest text-amber-500 uppercase font-semibold">My Precious, LLC</a>
+            <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider text-zinc-400">
+                <a href="#fleet" class="hover:text-amber-500 transition">The Fleet</a>
+                <a href="#services" class="hover:text-amber-500 transition">Services</a>
+                <a href="#contact" class="hover:text-amber-500 transition">Inquire</a>
+            </nav>
+            <a href="#contact" class="border border-amber-500/30 text-amber-500 px-5 py-2 text-xs uppercase tracking-wider hover:bg-amber-500 hover:text-black transition duration-300">Book Asset</a>
+        </div>
+    </header>
+
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('images/hero.jpg');">
+        <div class="absolute inset-0 bg-black/75"></div>
+        <div class="relative z-10 text-center max-w-3xl px-6">
+            <span class="text-amber-500 text-xs uppercase tracking-[0.3em] block mb-4">Curated Automotive Icons</span>
+            <h1 class="text-5xl md:text-7xl font-serif font-light tracking-tight mb-6">Exotic Static Prop & <br><span class="italic text-zinc-400">Picture Car</span> Rentals</h1>
+            <p class="text-zinc-400 md:text-lg font-light tracking-wide max-w-xl mx-auto mb-10">
+                Providing period-correct, pristine mid-2000s Italian supercars exclusively for film, media productions, and high-end brand activations.
+            </p>
+            <a href="#fleet" class="bg-amber-500 text-black font-semibold text-xs uppercase tracking-widest px-8 py-4 hover:bg-amber-400 transition duration-300">View The Fleet</a>
+        </div>
+    </section>
+
+    <section id="fleet" class="py-24 max-w-7xl mx-auto px-6 border-b border-zinc-900">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-serif tracking-wide mb-3">The Selection</h2>
+            <div class="h-[1px] w-12 bg-amber-500 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="group bg-zinc-900/40 border border-zinc-900 rounded-sm overflow-hidden">
+                <div class="h-80 overflow-hidden relative bg-zinc-900">
+                    <img src="images/lambo.jpg" alt="Lamborghini Murcielago" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="this.style.display='none';">
+                    <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-amber-500 text-[10px] tracking-widest uppercase px-3 py-1">V12 Asset</div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-serif tracking-wide mb-2">2005 Lamborghini Murcielago Roadster</h3>
+                    <p class="text-zinc-400 text-sm font-light leading-relaxed mb-6">
+                        An analog masterpiece. Featuring the raw, naturally aspirated V12 and open-top Roadster silhouette. Perfect for high-fashion editorial campaigns, music videos, and authentic mid-2000s period-correct aesthetics.
+                    </p>
+                    <ul class="text-xs tracking-wide text-zinc-500 space-y-2 uppercase">
+                        <li><strong class="text-zinc-400">Condition:</strong> Concours / Production Ready</li>
+                        <li><strong class="text-zinc-400">Placement:</strong> Static Display Only</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="group bg-zinc-900/40 border border-zinc-900 rounded-sm overflow-hidden">
+                <div class="h-80 overflow-hidden relative bg-zinc-900">
+                    <img src="images/ferrari.jpg" alt="Ferrari 360" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="this.style.display='none';">
+                    <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md text-amber-500 text-[10px] tracking-widest uppercase px-3 py-1">Rosso Corsa</div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-serif tracking-wide mb-2">2005 Ferrari 360 Spider</h3>
+                    <p class="text-zinc-400 text-sm font-light leading-relaxed mb-6">
+                        The ultimate symbol of Italian performance from the turn of the millennium. Beautifully optioned, open-top design allowing for seamless camera angles of talent inside the cabin during static setups.
+                    </p>
+                    <ul class="text-xs tracking-wide text-zinc-500 space-y-2 uppercase">
+                        <li><strong class="text-zinc-400">Condition:</strong> Flawless Collector Grade</li>
+                        <li><strong class="text-zinc-400">Placement:</strong> Static Display Only</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-zinc-900/20 border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif tracking-wide mb-3">Production & Display Solutions</h2>
+                <div class="h-[1px] w-12 bg-amber-500 mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 border border-zinc-900 bg-zinc-950">
+                    <div class="text-amber-500 text-xl font-serif mb-4">01 / Commercial & Film</div>
+                    <p class="text-zinc-400 text-sm font-light leading-relaxed">
+                        Hero cars tailored for music videos, indie films, and commercial shoots. Fully insured regional transit to set, supervised by a dedicated company handler.
+                    </p>
+                </div>
+                <div class="p-8 border border-zinc-900 bg-zinc-950">
+                    <div class="text-amber-500 text-xl font-serif mb-4">02 / Brand Activations</div>
+                    <p class="text-zinc-400 text-sm font-light leading-relaxed">
+                        Elevate high-end retail openings, real estate showcases, or luxury corporate galas by utilizing our vehicles as premium architectural showpieces.
+                    </p>
+                </div>
+                <div class="p-8 border border-zinc-900 bg-zinc-950">
+                    <div class="text-amber-500 text-xl font-serif mb-4">03 / Editorial Fashion</div>
+                    <p class="text-zinc-400 text-sm font-light leading-relaxed">
+                        Striking, aggressive styling lines serve as the perfect high-contrast backdrop for fashion lookbooks, product campaigns, and magazine features.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 max-w-4xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-serif tracking-wide mb-3">Booking Inquiries</h2>
+            <p class="text-zinc-500 text-sm font-light">Rates start at $1,500/day per asset. Based in the Pacific Northwest / Mountain Region.</p>
+        </div>
+
+        <form action="https://formspree.io/f/xgojkppo" method="POST" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-zinc-400 mb-2">Name / Production Co.</label>
+                    <input type="text" name="name" required class="w-full bg-zinc-900 border border-zinc-800 p-3 text-sm focus:outline-none focus:border-amber-500 text-zinc-100 rounded-sm">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-zinc-400 mb-2">Email Address</label>
+                    <input type="email" name="email" required class="w-full bg-zinc-900 border border-zinc-800 p-3 text-sm focus:outline-none focus:border-amber-500 text-zinc-100 rounded-sm">
+                </div>
+            </div>
+            <div>
+                <label class="block text-xs uppercase tracking-wider text-zinc-400 mb-2">Project Type / Details</label>
+                <textarea rows="4" name="message" required placeholder="Describe the deployment (e.g., Music Video, Luxury Real Estate Event, Static Location)..." class="w-full bg-zinc-900 border border-zinc-800 p-3 text-sm focus:outline-none focus:border-amber-500 text-zinc-100 rounded-sm"></textarea>
+            </div>
+            
+            <input type="hidden" name="_next" value="https://mypreciousprops.com/thanks.html">
+            
+            <button type="submit" class="w-full bg-amber-500 text-black font-semibold text-xs uppercase tracking-widest py-4 hover:bg-amber-400 transition duration-300 rounded-sm">Submit Secure Request</button>
+        </form>
+    </section>
+
+    <footer class="bg-zinc-950 border-t border-zinc-900 py-12 text-center text-xs text-zinc-600 tracking-wider">
+        <p class="mb-2">© 2026 My Precious, LLC. All rights reserved.</p>
+        <p class="uppercase text-[10px] text-zinc-700">Corporate Entity Registered in the State of Montana</p>
+    </footer>
+
+</body>
+</html>
